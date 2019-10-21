@@ -1,0 +1,108 @@
+//==========
+// 属性(Attribute)
+//==========
+
+// 基本設定
+// :version-label: を値無しにすると好みのバージョン名にすることができます
+:lang: ja
+:doctype: book
+:author: Author
+:revdate: 2019年10月21日
+:revnumber: 1.0版
+:version-label:
+// ディレクトリやテーマファイルなどの設定
+:imagesdir: ./img
+:pdf-style: my-theme.yml
+// 背景設定
+:title-page-background-image: image:title-page-back.png[]
+//:front-cover-image: image:title-page.pdf.pdf[]
+// 目次設定
+:toc:
+:toc-title: 目次
+// シンタックスハイライトの設定
+// ・Rougeを使います。asciidoctorインストールが必要です
+// ・rougeのスタイルは、https://github.com/jneen/rouge/tree/master/lib/rouge/themes にあります
+// ・デフォルトはgithubです
+:source-highlighter: rouge
+:rouge-style: pastie 
+
+//===========
+// 本文(Body)
+//===========
+
+= AsciiDocのTips: 数式の挿入
+
+AsciiDocにおいて数式を挿入するには、以下の2つの方法が考えられます。
+
+* 「asciidoctor-asciidoctor-mathematical」の導入
+** `gem install` する際にcmakeできる必要があります。
+** Windowsの場合、少々難易度が高いようです。
+* 数式をPNGなどの画像ファイルの導入
+** オフィスの数式エディタを使う方法
+** その他のエディタを使う方法★
+
+今回は、★の方法を使ってみます。使うのは、 https://www.mathcha.io/[Mathcha - Online Math Editor] です。
+
+== Mathchaの概要
+
+「Mathcha」は、数学オンラインWYSIWYGエディターです。数学の公式/方程式をすばやく書くことをサポートしてくれます。十分な標準テキスト編集機能、さまざまな数学記号/レイアウトのセット、および描画機能を提供します。これにより、数学文書（標準テキスト、数学モードテキスト、図/グラフ）を1か所で作成できます。
+
+== 簡単な使い方
+
+=== 起動
+
+[Open Editor]ボタンで起動します。
+
+ログインしていないと、image:mathcha002.jpg[] 新規作成や image:mathcha003.jpg[] フォルダ作成が使えません。その場限りで作成する場合はログインしなくても大丈夫です。
+
+ログインすると、以下のような画面となります。
+
+image:mathcha001.jpg[]
+
+<<<
+
+=== とりあえず数式の作成
+
+image:mathcha002.jpg[] で新規作成します。
+
+[Suggestion Box]ボタンを押して、[math-container]を選択します。
+
+image::mathcha004.jpg[width=800]
+
+再度、[Suggestion Box]ボタンを押せば、いろいろな数式を挿入することができます。
+
+image::mathcha005.jpg[width=800]
+
+<<<
+
+灰色の部分は、Shiftを押しながら選択すれば、入力可能な状態で挿入されます。
+
+image::mathcha006.jpg[]
+
+=== とりあえず出力
+
+入力した数式を選択すると、上部にエクスポート用のボタンが表示されます。
+
+image::mathcha007.jpg[]
+
+[Image]ボタンを押します。
+
+image::mathcha008.jpg[]
+
+[Download]ボタンを押して、所望の名前で保存します。
+
+以下は、ダウンロードしたPNGファイルを読み込んだものです。
+
+image::mathcha009.png[]
+
+== ヘルプなど
+
+左下の「Features Document」をクリックすると英語ではありますが、ドキュメントが表示されます。
+
+image::mathcha010.jpg[]
+
+== 本ページについて
+
+本ページはAsciiDocで作成しています。 https://github.com/WAKU-TAKE-A/asciidoctor_sample007[こちら] にサンプルを置いておきます。サンプルは、「 https://waku-take-a.github.io/Visual%2520Studio%2520Code%25E3%2581%258B%25E3%2582%2589PDF%25E3%2582%2592%25E5%2587%25BA%25E5%258A%259B%25E3%2581%2599%25E3%2582%258B.html[Visual Studio CodeからPDFを出力する] 」の方法で比較的簡単にPDFやHTMLにすることができます。
+
+AsciiDoc_Sample終わり
