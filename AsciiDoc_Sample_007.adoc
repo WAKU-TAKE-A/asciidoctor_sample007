@@ -24,7 +24,9 @@
 // ・rougeのスタイルは、https://github.com/jneen/rouge/tree/master/lib/rouge/themes にあります
 // ・デフォルトはgithubです
 :source-highlighter: rouge
-:rouge-style: pastie 
+:rouge-style: pastie
+// 脚注のラベルを有効にします
+:icons: font
 
 //===========
 // 本文(Body)
@@ -93,9 +95,15 @@ image::mathcha008.jpg[]
 
 [Download]ボタンを押して、所望の名前で保存します。
 
-以下は、ダウンロードしたPNGファイルを読み込んだものです。
+以下は、ダウンロードしたPNGファイルを読み込んだものです。×2でダウンロードし、画像幅を半分にしています。
 
-image::mathcha009.png[]
+image::mathcha009.png[width=130]
+
+[NOTE]
+====
+SVGファイルを読み込むこともできるようですが、フォントの設定がよくわかりませんでした。。。 +
+恐らくprawn-svgのフォント設定だと思います。フォントの存在しないSVG（アウトラインをとったもの）なら正常に表示されます。
+====
 
 == ヘルプなど
 
