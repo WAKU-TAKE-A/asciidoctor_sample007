@@ -44,8 +44,8 @@ font:
     #  italic: RictyDiminished-Oblique.ttf
     #   bold_italic: RictyDiminished-BoldOblique.ttf
 fallbacks:
-    #- M+ 1p Fallback
-    - GenShinGothic
+    - M+ 1p Fallback
+    #- GenShinGothic
 #------
 # Page Section
 #------
