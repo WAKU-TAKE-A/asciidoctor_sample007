@@ -40,7 +40,7 @@ AsciiDocにおいて数式を挿入するには、以下の2つの方法が考�
 * 「asciidoctor-asciidoctor-mathematical」の導入
 ** `gem install` する際にcmakeできる必要があります。
 ** Windowsの場合、少々難易度が高いようです。
-* 数式をPNGなどの画像ファイルの導入
+* 数式をPNGなどの画像ファイルに変換して挿入
 ** オフィスの数式エディタを使う方法
 ** その他のエディタを使う方法★
 
