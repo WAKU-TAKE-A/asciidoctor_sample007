@@ -1,4 +1,4 @@
-set fname=AsciiDoc_Sample_006
+set fname=AsciiDoc_Sample_007
 set fname_adc="%fname%.adoc"
 set fname_pdf="%fname%.pdf"
 
