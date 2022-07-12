@@ -7,13 +7,13 @@
 :lang: ja
 :doctype: book
 :author: Author
-:revdate: 2019年11月3日
-:revnumber: 1.2版
+:revdate: 2022年7月11日
+:revnumber: 1.3版
 :version-label:
 // ディレクトリやテーマファイルなどの設定
-:pdf-style: my-theme2.yml
 :imagesdir: ./img
-//:pdf-fontsdir: ../fonts
+:pdf-themesdir: ./
+:pdf-theme: my-theme.yml
 // 背景設定
 :title-page-background-image: image:title-page-back.png[]
 //:front-cover-image: image:title-page.pdf.pdf[]
